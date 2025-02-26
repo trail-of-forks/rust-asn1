@@ -89,7 +89,7 @@ impl ObjectIdentifier {
         }
     }
 
-    pub(crate) fn as_der(&self) -> &[u8] {
+    pub fn as_der(&self) -> &[u8] {
         &self.der_encoded[..self.der_encoded_len as usize]
     }
 }

@@ -231,7 +231,7 @@ impl<'a> Parser<'a> {
         Parser::new(self.data)
     }
 
-    pub(crate) fn peek_tag(&mut self) -> Option<Tag> {
+    pub fn peek_tag(&mut self) -> Option<Tag> {
         let (tag, _) = Tag::from_bytes(self.data).ok()?;
         Some(tag)
     }
